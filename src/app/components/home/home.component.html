@@ -1,0 +1,17 @@
+<div class="users">
+  <ng-container *ngFor="let user of users">
+    <div class="user">
+      <div class="user-image-container">
+        <img
+          class="user-image"
+          src="{{ user.avatar_url }}"
+          alt="avatar"
+          (click)="redirectToProfile(user.login)"
+        />
+      </div>
+      <div class="user-description">
+        <p class="user-name">{{ user.login }}</p>
+      </div>
+    </div>
+  </ng-container>
+</div>

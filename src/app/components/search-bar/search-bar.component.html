@@ -1,0 +1,11 @@
+<div class="search">
+    <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <input 
+            class="search-input" 
+            type="text" 
+            name="search"
+            ngModel
+            placeholder="Username"
+        >
+    </form>
+</div>
